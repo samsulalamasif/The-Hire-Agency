@@ -1,9 +1,12 @@
 import React from "react";
+import Statistics from "../Statistics/Statistics";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <div>
+        <h1>Home</h1>
+      </div>
     </div>
   );
 };
