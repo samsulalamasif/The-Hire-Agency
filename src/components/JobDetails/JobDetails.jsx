@@ -65,6 +65,10 @@ const JobDetails = () => {
                 <span>{details.jobTitle} </span>
               </p>
             </div>
+            <h1 className="text-xl font-bold mt-4 mb-5">
+              Company:{" "}
+              <span className="text-indigo-500">{details.company}</span>
+            </h1>
             <h1 className="text-2xl font-bold mt-8 mb-5">
               Contact Information
             </h1>

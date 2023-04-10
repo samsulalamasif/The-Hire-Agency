@@ -14,7 +14,7 @@ const Blog = () => {
       </div>
       <div className="flex justify-center items-center my-48 gap-6  ">
         <div className="border-2 border-gray-500 rounded-lg w-72 h-96 p-4 ">
-          <h1 className="font-bold text-2xl ">
+          <h1 className="font-bold text-2xl text-indigo-500 ">
             When should you use context API?
           </h1>
           <br />
@@ -25,7 +25,9 @@ const Blog = () => {
           </span>
         </div>
         <div className="border-2 border-gray-500 rounded-lg w-72 h-96 p-4">
-          <h1 className="font-bold text-2xl ">What is a custom hook?</h1>
+          <h1 className="font-bold text-2xl text-indigo-500 ">
+            What is a custom hook?
+          </h1>
           <br />
           <span className="text-gray-700 font-semibold text-xl">
             Custom Hook is a JavaScript function which we create by ourselves,
@@ -33,7 +35,9 @@ const Blog = () => {
           </span>
         </div>
         <div className="border-2 border-gray-500 rounded-lg w-72 h-96 p-4">
-          <h1 className="font-bold text-2xl ">What is useRef?</h1>
+          <h1 className="font-bold text-2xl text-indigo-500 ">
+            What is useRef?
+          </h1>
           <br />
           <span className="text-gray-700 font-semibold text-xl">
             The useRef is a hook that allows to directly create a reference to
@@ -42,7 +46,9 @@ const Blog = () => {
           </span>
         </div>
         <div className="border-2 border-gray-500 rounded-lg w-72 h-96 p-4">
-          <h1 className="font-bold text-2xl ">What is useMemo?</h1>
+          <h1 className="font-bold text-2xl text-indigo-500 ">
+            What is useMemo?
+          </h1>
           <br />
           <span className="text-gray-700 font-semibold text-xl">
             The basic purpose of the useMemo hook is related to the fact that we
