@@ -1,12 +1,13 @@
-import React from "react";
-import Statistics from "../Statistics/Statistics";
+import React, { useState } from "react";
+import Header from "../Header/Header";
+import CategoryList from "../CategoryList/CategoryList";
 
 const Home = () => {
   return (
     <div>
-      <div>
-        <h1>Home</h1>
-      </div>
+      <Header></Header>
+      <CategoryList></CategoryList>
+      <div></div>
     </div>
   );
 };
