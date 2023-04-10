@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import vector from "/Image/All Images/Vector-1.png";
+import vector from "/Image/All Images/Vector.png";
 
 const JobDetails = () => {
   const dynamic = useParams();
