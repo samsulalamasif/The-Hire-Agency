@@ -11,11 +11,17 @@ const Home = () => {
     <div>
       <Header></Header>
       <CategoryList></CategoryList>
+      <h1 className="text-5xl font-bold mt-16 text-center">Featured Jobs</h1>
+      <p className=" text-lg font-semibold text-gray-600 text-center mt-4">
+        Explore thousands of job opportunities with all the information you
+        need. Its your future
+      </p>
 
       <div className="grid md:grid-cols-2 gap-5 mt-10">
-        {jobsFeaturedData.map((jobs) => (
-          <Jobsfeatured key={jobs._id} jobs={jobs}></Jobsfeatured>
-        ))}
+        {jobsFeaturedData &&
+          jobsFeaturedData.map((jobs) => (
+            <Jobsfeatured key={jobs.id} jobs={jobs}></Jobsfeatured>
+          ))}
       </div>
       <div className="flex justify-center my-20">
         <button className="text-xl font-bold btn bg-indigo-600 w-32 mx-auto hover:bg-indigo-900">
