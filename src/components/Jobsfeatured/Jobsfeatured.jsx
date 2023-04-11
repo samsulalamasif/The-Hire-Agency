@@ -29,11 +29,13 @@ const Jobsfeatured = ({ jobs }) => {
       <div className="flex gap-10">
         <div className="flex justify-center items-center gap-2">
           <img className="w-6 h-6" src="/Image/Icons/Frame-4.png" alt="" />
-          <p className="text-lg font-semibold">{location}</p>
+          <p className="text-lg font-semibold text-gray-600">{location}</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img className="w-6 h-6" src="/Image/Icons/Frame.png" alt="" />
-          <p className="text-lg font-semibold">{salary}</p>
+          <p className="text-lg font-semibold text-gray-600">
+            Salary: {salary}
+          </p>
         </div>
       </div>
       <Link to={`/details/${id}`}>
