@@ -37,6 +37,10 @@ const AppliedJobs = () => {
           Applied Jobs
         </h1>
       </div>
+      <div className="flex justify-center gap-5  my-10">
+        <button className="btn btn-outline ">Remote</button>
+        <button className="btn btn-outline">Onsite</button>
+      </div>
       {appliedJobs.map((appliedJob) => (
         <AllApplyJob
           appliedJob={appliedJob}

@@ -7,6 +7,11 @@ import Jobsfeatured from "../Jobsfeatured/Jobsfeatured";
 const Home = () => {
   const jobsFeaturedData = useLoaderData();
 
+  const [showAll, setShowAll] = useState(false);
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
   return (
     <div>
       <Header></Header>
@@ -19,14 +24,20 @@ const Home = () => {
 
       <div className="grid md:grid-cols-2 gap-5 mt-10">
         {jobsFeaturedData &&
-          jobsFeaturedData.map((jobs) => (
-            <Jobsfeatured key={jobs.id} jobs={jobs}></Jobsfeatured>
-          ))}
+          jobsFeaturedData
+            .slice(0, showAll ? 6 : 4)
+            .map((jobs) => (
+              <Jobsfeatured key={jobs.id} jobs={jobs}></Jobsfeatured>
+            ))}
       </div>
       <div className="flex justify-center my-20">
-        <button className="text-xl font-bold btn bg-indigo-600 w-32 mx-auto hover:bg-indigo-900">
-          See All
-        </button>
+        {!showAll && (
+          <span onClick={handleShowAll}>
+            <button className="text-xl font-bold btn bg-indigo-600 w-32 mx-auto hover:bg-indigo-900">
+              See All
+            </button>
+          </span>
+        )}
       </div>
     </div>
   );
