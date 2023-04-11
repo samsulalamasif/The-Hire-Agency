@@ -5,18 +5,17 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from "./components/Home/Home";
-import ErrorPage from "./components/Error/Error";
 import Statistics from "./components/Statistics/Statistics";
 import AppliedJobs from "./components/Applied Jobs/AppliedJobs";
 import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
-import ErrorHandel from "./components/Error/ErrorHandel";
+import ErrorPage from "./components/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    errorElement: <ErrorHandel></ErrorHandel>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
