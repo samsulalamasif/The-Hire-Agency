@@ -1,5 +1,4 @@
 import React from "react";
-import JobDetails from "../JobDetails/JobDetails";
 import { Link } from "react-router-dom";
 
 const Jobsfeatured = ({ jobs }) => {

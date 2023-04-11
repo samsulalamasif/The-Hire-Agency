@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import vector from "/Image/All Images/Vector.png";
+import { addToDb } from "../../utilities/fakedb";
 
 const JobDetails = () => {
   const dynamic = useParams();
@@ -12,6 +13,10 @@ const JobDetails = () => {
       setDetails(detailsData);
     }
   }, []);
+
+  const handleAddToCart = (id) => {
+    addToDb(id);
+  };
 
   return (
     <div className="">
@@ -95,11 +100,12 @@ const JobDetails = () => {
             </div>
           </div>
 
-          <Link>
-            <button className="btn bg-indigo-600 hover:bg-indigo-900 mt-6 w-full">
-              Apply Now
-            </button>
-          </Link>
+          <button
+            onClick={() => handleAddToCart(details.id)}
+            className="btn bg-indigo-600 hover:bg-indigo-900 mt-6 w-full"
+          >
+            Apply Now
+          </button>
         </div>
       </div>
     </div>
